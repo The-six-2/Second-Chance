@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop | Second Hand </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#eef2ff;
+}
+
+nav{
+background:linear-gradient(135deg,#4F46E5,#06B6D4);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:white;
+}
+
+/* Navigation */
+
+nav{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(12px);
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    z-index:1000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    background:linear-gradient(45deg,#6C63FF,#00C6FF);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#6C63FF;
+}
+
+
+.banner{
+height:350px;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("secondhand2.jpg");
+background-size:cover;
+background-position:center 45%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.banner h1{
+font-size:50px;
+}
+
+.filter{
+width:90%;
+margin:40px auto;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.filter input{
+padding:14px;
+width:300px;
+border:2px solid #4F46E5;
+border-radius:30px;
+outline:none;
+}
+
+.filter select{
+padding:14px;
+border-radius:30px;
+border:2px solid #4F46E5;
+}
+
+.products{
+width:90%;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+padding-bottom:60px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.info{
+padding:20px;
+text-align:center;
+}
+
+.info h3{
+margin-bottom:10px;
+}
+
+.price{
+color:#4F46E5;
+font-size:24px;
+font-weight:bold;
+margin:10px 0;
+}
+
+button{
+padding:12px 25px;
+background:#4F46E5;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+}
+
+button:hover{
+background:#312E81;
+}
+
+.sale{
+position:absolute;
+background:#EF4444;
+color:white;
+padding:6px 15px;
+border-radius:0 0 12px 0;
+}
+
+.card{
+position:relative;
+}
+
+.cart{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#4F46E5;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+footer{
+background:#1F2937;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<img src="logo1.jpg" width="50px" height="50px" style="vertical-align: middle; margin: right: 10px;">
+Second Chance</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="banner">
+
+<div>
+
+<h1>Second Chance</h1>
+
+<p>Find Your Favorite Second Hand Things</p>
+
+</div>
+
+</section>
+
+<div class="filter">
+
+<input type="text" id="search" placeholder="Search Product">
+
+<!--<select>
+<option>All Categories</option>
+<option>Clothes</option>
+<option>Toy</option>
+<option>Accessories</option>
+<option>Gaming</option>
+</select>-->
+
+</div>
+
+<section class="products">
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing1.jpg">
+<div class="info">
+<h3>Zootopia x Molly(No box but with Card)</h3>
+
+<!--<button onclick="addCart(
+'Galaxy S25',
+899,
+'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80'
+)">
+Add to Cart
+</button>-->
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing2.jpg">
+<div class="info">
+<h3>T-Shirt</h3>
+
+<!--<button onclick="addCart(
+'Gaming Laptop',
+1399,
+'https://images.unsplash.com/photo-1517336714739-489689fd1ca8?auto=format&fit=crop&w=700&q=80'
+)">
+Add to Cart
+</button>-->
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing3.jpg">
+<div class="info">
+<h3>T-Shirt(L)</h3>
+<!--<p class="price">฿?</p>-->
+<!--<button onclick="addCart(
+'Headset',
+899,
+'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80>'
+)">
+Add to Cart
+</button>-->
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing4.jpg">
+<div class="info">
+<h3>Harmonica</h3>
+<!--<button onclick="addCart(
+'Smart Watch',
+899,
+'https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=700&q=80'
+)">
+Add to Cart
+</button>-->
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing5.jpg">
+<div class="info">
+<h3>POP x LOL(Chibi)</h3>
+
+<!--<button onclick="addCart(
+'Gaming Mouse',
+899,
+'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=700&q=80'
+)">
+Add to Cart
+</button>-->
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing6.jpg">
+<div class="info">
+<h3>T-Shirt(Black)</h3>
+
+<!--<button onclick="addCart(
+'RGB Keyboard',
+899,
+'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80'
+)">
+Add to Cart
+</button>-->
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing7.jpg">
+<div class="info">
+<h3>T-Shirt(Brown)</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing8.jpg">
+<div class="info">
+<h3>V-neck Sweater(Grey)</h3>
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing9.jpg">
+<div class="info">
+<h3>Canvas Tote Bag</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing10.jpg">
+<div class="info">
+<h3>Crossbody Bag</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing11.jpg">
+<div class="info">
+<h3>Magsafe For iPhone</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing12.jpg">
+<div class="info">
+<h3>Acrylic Marker</h3>
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing13.jpg">
+<div class="info">
+<h3>Motorcycle Seat</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing14.jpg">
+<div class="info">
+<h3>Butterbear Keychain</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing15.jpg">
+<div class="info">
+<h3>Fluffy Bag</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing16.jpg">
+<div class="info">
+<h3>Taocaitu Fashion Canvas Tote Bag</h3>
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing17.jpg">
+<div class="info">
+<h3>Corduroy Tote Bag</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing18.jpg">
+<div class="info">
+<h3>Cute Dog Shoulder Bag</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing19.jpg">
+<div class="info">
+<h3>Coach</h3>
+
+</div>
+</div>
+
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing20.jpg">
+<div class="info">
+<h3>Floral Wallet</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing21.jpg">
+<div class="info">
+<h3>Shif colored pencils</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing22.jpg">
+<div class="info">
+<h3>Poppy Playtime</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing23.jpg">
+<div class="info">
+<h3>Hoodie</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing24.jpg">
+<div class="info">
+<h3>T-Shirt(Black)</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing25.jpg">
+<div class="info">
+<h3>T-Shirt(Brown)</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing26.jpg">
+<div class="info">
+<h3>Sweatshirt</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing27.jpg">
+<div class="info">
+<h3>MIGO V3 series</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing28.jpg">
+<div class="info">
+<h3>Water Bottle</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing29.jpg">
+<div class="info">
+<h3>Water Bottle And Speaker</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing30.jpg">
+<div class="info">
+<h3>MINI FAN</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing31.jpg">
+<div class="info">
+<h3>MINI FAN(Pink)</h3>
+
+</div>
+</div>
+
+<div class="card">
+<div class="sale">SALE</div>
+<img src="Secondhandthing/Secondhandthing32.jpg">
+<div class="info">
+<h3>Card Holder</h3>
+
+</div>
+</div>
+
+</section>
+
+<!--<div class="cart" onclick="window.location.href='cart.html'">
+🛒 <span id="count">0</span>
+</div>-->
+
+<footer>
+
+<h3>Second Chance</h3>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+<script src="script.js"></script>
+
+
+</body>
+</html>
