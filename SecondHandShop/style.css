@@ -211,22 +211,84 @@ footer h2{
     margin-bottom:10px;
 }
 
-@media(max-width:768px){
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
 
-.hero h1{
-    font-size:42px;
-}
+  nav {
+    flex-direction: column;
+    padding: 15px;
+  }
 
-.hero p{
-    font-size:18px;
-}
+  .logo {
+    font-size: 24px;
+    text-align: center;
+  }
 
-nav{
-    flex-direction:column;
-}
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+  }
 
-nav ul{
-    margin-top:15px;
-}
+  nav ul li {
+    margin: 10px 0;
+  }
 
+  .hero {
+    height: auto;
+    padding: 120px 20px 50px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .feature-grid,
+  .category-grid,
+  .product-grid,
+  .contact-container,
+  .contact-content,
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+  .box,
+  .category,
+  .product-card,
+  .contact-box,
+  .about-box {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    width: 100%;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
 }
