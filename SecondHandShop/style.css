@@ -211,83 +211,22 @@ footer h2{
     margin-bottom:10px;
 }
 
-/* Mobile Responsive */
-@media screen and (max-width: 768px) {
+@media(max-width:768px){
 
- nav{
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+nav{
+    flex-direction:column;
 }
 
 nav ul{
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    margin-top:10px;
+    margin-top:15px;
 }
 
-nav ul li{
-    margin:5px 10px;
-}
-
-.logo{
-    font-size:20px;
-}
-  .hero {
-    height: auto;
-    padding: 120px 20px 50px;
-  }
-
-  .hero h1 {
-    font-size: 34px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .hero button {
-    width: 100%;
-    max-width: 250px;
-  }
-
-  .section-title {
-    font-size: 28px;
-  }
-
-  .feature-grid,
-  .category-grid,
-  .product-grid,
-  .contact-container,
-  .contact-content,
-  .about-container {
-    display: grid;
-    grid-template-columns: 1fr !important;
-  }
-
-  .box,
-  .category,
-  .product-card,
-  .contact-box,
-  .about-box {
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  input,
-  textarea,
-  select,
-  button {
-    width: 100%;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
 }
